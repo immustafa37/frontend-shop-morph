@@ -1,0 +1,25 @@
+.neumorphism-theme {
+  --bg-color: #e0e5ec;
+  --text-color: #31344b;
+  --card-bg: #e0e5ec;
+  --card-shadow: 
+    8px 8px 16px #a3b1c6,
+    -8px -8px 16px #ffffff;
+  --primary-color: #6b5b95;
+  --secondary-color: #d64161;
+}
+
+.neumorphism-theme body {
+  background: var(--bg-color);
+  min-height: 100vh;
+  color: var(--text-color);
+}
+
+.neumorphism-theme .product-card,
+.neumorphism-theme .navbar,
+.neumorphism-theme .footer {
+  background: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  border: none;
+}
