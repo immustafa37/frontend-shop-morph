@@ -1,46 +1,32 @@
-const products = [
+export const products = [
   {
-    id: 1,
-    name: "Glass Phone Case",
-    price: 29.99,
-    image: "/assets/products/phone-case.jpg",
-    description: "Premium transparent case with glassmorphism effect"
-  },
-  {
-    id: 2,
-    name: "3D Glass Mug",
-    price: 24.99,
-    image: "/assets/products/glass-mug.jpg",
-    description: "Unique mug with 3D glass-like appearance"
-  },
-  {
-    id: 3,
-    name: "Holographic Watch",
-    price: 89.99,
-    image: "/assets/products/holographic-watch.jpg",
-    description: "Watch with holographic glass display"
-  },
-  {
-    id: 4,
-    name: "Transparent Keyboard",
-    price: 79.99,
-    image: "/assets/products/transparent-keyboard.jpg",
-    description: "Mechanical keyboard with glass keycaps"
-  },
-  {
-    id: 5,
-    name: "Glass Effect Lamp",
+    title: 'Wireless Headphones',
     price: 49.99,
-    image: "/assets/products/glass-lamp.jpg",
-    description: "Modern lamp with glassmorphism lighting"
+    image: '/assets/digital-products/headphones.jpg',
   },
   {
-    id: 6,
-    name: "Frosted Glass Speaker",
-    price: 129.99,
-    image: "/assets/products/glass-speaker.jpg",
-    description: "Bluetooth speaker with frosted glass finish"
-  }
+    title: 'Smart Watch',
+    price: 89.99,
+    image: '/assets/digital-products/smartwatch.jpg',
+  },
+  {
+    title: 'Men T-Shirt',
+    price: 19.99,
+    image: '/assets/clothes/men-tshirt.jpg',
+  },
+  {
+    title: 'Ladies Handbag',
+    price: 59.99,
+    image: '/assets/fashion/handbag.jpg',
+  },
+  {
+    title: 'Digital Camera',
+    price: 149.99,
+    image: '/assets/digital-products/camera.jpg',
+  },
+  {
+    title: 'Running Shoes',
+    price: 39.99,
+    image: '/assets/clothes/shoes.jpg',
+  },
 ];
-
-export default products;

@@ -1,24 +1,10 @@
-.about {
+.about-page {
   padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.about h1 {
+  color: var(--text-color);
   text-align: center;
-  margin-bottom: 2rem;
 }
 
-.about-content {
-  display: grid;
-  gap: 2rem;
-}
-
-.about-content section {
-  padding: 1.5rem;
-}
-
-.about-content h2 {
-  margin-bottom: 1rem;
-  color: #555;
+.about-page p {
+  font-size: 1.1rem;
+  margin-top: 1rem;
 }

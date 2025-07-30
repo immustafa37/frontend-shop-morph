@@ -1,17 +1,15 @@
+import React from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-logo">
-        {/* Logo will go here */}
-        <h1>GlassShop</h1>
-      </div>
-      <div className="navbar-links">
-        <a href="/">Home</a>
-        <a href="/products">Products</a>
-        <a href="/about">About</a>
-      </div>
+      <div className="logo">ShopVerse</div>
+      <ul className="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
     </nav>
   );
 };

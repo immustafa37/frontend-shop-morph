@@ -1,25 +1,14 @@
-.neumorphism-theme {
-  --bg-color: #e0e5ec;
-  --text-color: #31344b;
-  --card-bg: #e0e5ec;
-  --card-shadow: 
-    8px 8px 16px #a3b1c6,
-    -8px -8px 16px #ffffff;
-  --primary-color: #6b5b95;
-  --secondary-color: #d64161;
-}
-
-.neumorphism-theme body {
-  background: var(--bg-color);
-  min-height: 100vh;
+.neumorph {
+  --bg: #e0e0e0;
+  --nav-bg: #e0e0e0;
+  --footer-bg: #e0e0e0;
+  --card-bg: #e0e0e0;
+  --button-bg: #e0e0e0;
+  --text-color: #333333;
+  --nav-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff;
+  --card-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff;
+  --button-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
+  --footer-shadow: 4px 4px 10px #bebebe, -4px -4px 10px #ffffff;
+  background: #e0e0e0;
   color: var(--text-color);
-}
-
-.neumorphism-theme .product-card,
-.neumorphism-theme .navbar,
-.neumorphism-theme .footer {
-  background: var(--card-bg);
-  border-radius: 10px;
-  box-shadow: var(--card-shadow);
-  border: none;
 }

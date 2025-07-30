@@ -1,25 +1,52 @@
-.app {
+/* ===== Reset & Base Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg);
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.App {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding: 1.5rem;
+  gap: 2rem;
 }
 
-.app > *:nth-child(2) {
-  flex: 1;
+/* Container for consistent layout */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
-/* Base styles that apply to both themes */
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: all 0.3s ease;
+/* Responsive Typography */
+h1,
+h2,
+h3 {
+  color: var(--text-color);
+  font-weight: 600;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  color: var(--text-color);
+}
+
+/* Utility Classes */
+.center {
+  text-align: center;
+}
+
+/* Smooth theme transition */
+body.glass,
+body.neumorph {
+  transition: all 0.3s ease-in-out;
 }

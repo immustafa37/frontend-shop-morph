@@ -1,20 +1,22 @@
-import { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 
-const ThemeContext = createContext();
+export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [isGlassTheme, setIsGlassTheme] = useState(true);
+  const [theme, setTheme] = useState('glass');
 
   const toggleTheme = () => {
-    setIsGlassTheme(!isGlassTheme);
-    document.body.className = isGlassTheme ? 'neumorphism-theme' : 'glassmorphism-theme';
+    setTheme(prev => (prev === 'glass' ? 'neumorph' : 'glass'));
   };
 
+  useEffect(() => {
+    document.body.className = '';
+    document.body.classList.add(theme);
+  }, [theme]);
+
   return (
-    <ThemeContext.Provider value={{ isGlassTheme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   );
 };
-
-export const useTheme = () => useContext(ThemeContext);
